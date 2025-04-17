@@ -22,7 +22,7 @@ Questo design consente al decoder di generare l’output un token alla volta, us
 
 ---
 
-## Self-Attention: come funziona davvero?
+## Self-Attention
 
 Il modulo `SelfAttention` implementa uno dei concetti centrali del Transformer: l’attenzione su sé stessi, o **self-attention**. Questo meccanismo permette a ogni parola di valutare quanto siano importanti le altre parole della frase per comprendere il proprio significato.
 
@@ -41,7 +41,7 @@ Ecco un’illustrazione presa dal paper:
 
 ---
 
-## Spiegazione del codice `SelfAttention`
+## Riassunto del codice
 
 Il modulo `SelfAttention` definito in PyTorch segue questi passaggi fondamentali:
 
@@ -58,7 +58,7 @@ L'uso di `torch.einsum` permette di esprimere il prodotto scalare e l'applicazio
 ---
 
 
-## Perché è altamente parallelizzabile?
+## Perché è così rivoluzionario
 
 La chiave del successo del Transformer è la sua **capacità di elaborare tutta la sequenza in parallelo**, grazie al meccanismo di self-attention.
 
